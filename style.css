@@ -1,0 +1,183 @@
+:root{
+    --background-dark: #536976;
+    --background-light: #518aac;
+    --background-mid: #324957;
+    --font-dark: #98b6a5;
+    --font-light: #bbd2c5;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--background-dark);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#header{
+    background-color: var(--background-light);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    background-color: rgb(233, 233, 152);
+    border: solid black 1px;
+    color: black;
+    padding: 3px 10px 3px 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#nav{
+    list-style: none;
+    display: flex;
+    /* align-items: center;
+    justify-content: space-around;
+    margin: auto; */
+    float: right;
+    font-size: 20px;
+    padding-top: 45px;
+}
+
+#nav li{
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: var(--font-light);
+}
+
+#nav li a:hover{
+    color: var(--font-dark);
+}
+
+#nav li a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--font-dark);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: all .27s;
+}
+
+#nav li a:hover::after{
+    width: 100%;
+}
+
+#nav li a.active{
+    color: #fff;
+}
+
+#nav li a.active::after{
+    color: #fff;
+    content: '';
+    position: absolute;
+    background-color: var(--font-dark);
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -8px;
+}
+
+#icon{
+    color: var(--font-light);
+    font-size: 70px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#about-us{
+    display: block;
+    width: 1000px;
+    border: solid var(--background-mid);
+    border-radius: 20px;
+    font-size: 30px;
+    color: var(--font-light);
+    margin-top: 50px;
+    background-color: var(--background-mid);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-us h1{
+    color: black;
+    padding-bottom: 25px;
+}
+
+#table ,th, td{
+    background-color: var(--background-mid);
+    border: solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#table th{
+    color: #98b6a5;
+}
+
+#table p{
+    color: var(--font-light);
+    font-size: 25px;
+}
+
+#table caption{
+    font-size: 70px;
+}
+
+h1{
+    font-size: 50px;
+}
+#field{
+    display: block;
+    width: 500px;
+    background-color: var(--background-mid);
+    border: solid var(--background-mid);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+#field ol{
+    list-style: disc;
+    font-size: 35px;
+    color: var(--font-light);
+    padding-top: 70px;
+}
+
+#form{
+    display: block;
+    width: 600px;
+    background-color: var(--background-mid);
+    border: solid var(--background-mid);
+    border-radius: 20px;
+    font-size: 30px;
+    color: var(--font-light);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 15px;
+}
+#form h1{
+    font-size: 65px;
+    color: black;
+}
